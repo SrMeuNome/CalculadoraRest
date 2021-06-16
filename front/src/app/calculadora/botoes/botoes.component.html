@@ -1,0 +1,10 @@
+<div class="botao disable-select" [ngClass]="{'botao-click': isTouch}"
+(click)="emitEvent()" (mousedown)="isTouch=true" (mouseup)="isTouch=false"
+>
+    <div *ngIf="icon === ''" [ngClass]="{'move-simbol': isTouch}">
+        {{simbol}}
+    </div>
+    <div *ngIf="icon !== ''" class="material-icons" [ngClass]="{'move-simbol': isTouch}">
+        {{icon}}
+    </div>
+</div>

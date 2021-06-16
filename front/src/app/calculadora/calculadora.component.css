@@ -1,0 +1,117 @@
+.calculadora{
+    width: 20vw;
+    height: 50vh;
+    background-color: #000000;
+    position: relative;
+    border-radius: 2.5%;
+    box-shadow: 6px 2px 14px 5px #00000037;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.display{
+    width: 90%;
+    height: 30%;
+    top: 5%;
+    left: 5%;
+    right: 5%;
+    border-radius: 2.5%;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 1;
+    box-shadow: inset -5px -4px 16px 10px #00000015;
+}
+
+.botao-container{
+    width: 85%;
+    height: 42%;
+    bottom: 5%;
+    left: 7.5%;
+    right: 7.5%;
+    border-radius: 2.5%;
+    padding: 1%;
+    background-color: #ffffff;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.display-n-1{
+    width: 30%;
+    height: 20%;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    padding-left: 0%;
+    padding-right: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    text-align: center;
+    font-size: x-large;
+}
+
+.display-n-2{
+    width: 30%;
+    height: 20%;
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    padding-left: 0%;
+    padding-right: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    text-align: center;
+    font-size: x-large;
+}
+
+.sinal{
+    width: 20%;
+    height: 20%;
+    text-align: center;
+    font-size: xx-large;
+    position: absolute;
+    top: 31%;
+    left: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultado{
+    width: 80%;
+    height: 20%;
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    padding-left: 0%;
+    padding-right: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    text-align: center;
+    font-size: x-large;
+}
+
+.botoes-acao{
+    width: 35%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    top: 33%;
+    left: 32.5%;
+}
+
+.input-enable{
+    background-color: #aaffaa;
+}

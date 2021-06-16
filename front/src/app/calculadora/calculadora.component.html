@@ -1,0 +1,30 @@
+<div class="calculadora">
+    <div class="display">
+        <input [value]="num[0]" type="text" class="display-n-1" [ngClass]="{'input-enable': selectedNum === 0}" disabled>
+        <div class="sinal"> {{operacao}} </div>
+        <input [value]="num[1]" type="text" class="display-n-2" [ngClass]="{'input-enable': selectedNum === 1}" disabled>
+        <input [value]="result" type="text" class="resultado" disabled>
+    </div>
+    <div class="botoes-acao">
+        <app-botoes (press)="setNum($event)" [simbol]="'Enter'" [icon]="'sync_alt'"></app-botoes>
+        <app-botoes (press)="setNum($event)" [simbol]="'Backspace'" [icon]="'keyboard_backspace'"></app-botoes>
+    </div>
+    <div class="botao-container">
+        <app-botoes (press)="setNum($event)" [simbol]="'1'"></app-botoes>
+        <app-botoes (press)="setNum($event)" [simbol]="'2'"></app-botoes>
+        <app-botoes (press)="setNum($event)" [simbol]="'3'"></app-botoes>
+        <app-botoes (press)="setNum($event)" [simbol]="'4'"></app-botoes>
+        <app-botoes (press)="setNum($event)" [simbol]="'5'"></app-botoes>
+        <app-botoes (press)="setNum($event)" [simbol]="'6'"></app-botoes>
+        <app-botoes (press)="setNum($event)" [simbol]="'7'"></app-botoes>
+        <app-botoes (press)="setNum($event)" [simbol]="'8'"></app-botoes>
+        <app-botoes (press)="setNum($event)" [simbol]="'9'"></app-botoes>
+        <app-botoes (press)="setNum($event)" [simbol]="'0'"></app-botoes>
+        <app-botoes (press)="setNum($event)" [simbol]="'+'"></app-botoes>
+        <app-botoes (press)="setNum($event)" [simbol]="'-'"></app-botoes>
+        <app-botoes (press)="setNum($event)" [simbol]="'*'"></app-botoes>
+        <app-botoes (press)="setNum($event)" [simbol]="':'"></app-botoes>
+        <app-botoes (press)="setNum($event)" [simbol]="'='"></app-botoes>
+    </div>
+</div>
+

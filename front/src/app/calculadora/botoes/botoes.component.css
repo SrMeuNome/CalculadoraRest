@@ -1,0 +1,22 @@
+.botao{
+    width: 3vw;
+    height: 3vw;
+    border-radius: 0.5vw;
+    background-color: #cfcfcf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset -3px -5px 5px 1px #00000047;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.botao-click{
+    transition: linear 0.1s;
+    box-shadow: inset 3px 5px 5px 1px #00000047;
+}
+
+.move-simbol{
+    transition: linear 0.1s;
+    transform: translate(2px, 3px);
+}
